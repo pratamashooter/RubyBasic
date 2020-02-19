@@ -1,0 +1,47 @@
+===========================================================================
+				BELAJAR RUBY
+===========================================================================
+Puts / print pada ruby fungsi nya sama dengan echo pada php
+perbedaan keduanya adalah :
+puts : otomatis membuat new line ketika di jalankan
+print : tidak membuat line / otomatis sejajar dengan perintah di terminal
+
+===========================================================================
+			DAFTAR ISI RUBY FILE
+===========================================================================
+file latihan ruby
+1. Print data (puts/print)
+2. Variabel dan Interpolation
+3. Tipe Data
+4. Data Input
+5. Method untuk String
+6. Operasi Matematika
+7. Modulus
+8. Operator Perbandingan
+9. Operator Logika
+10. IF Conditional 1 line
+11. Unless Conditional
+12. IF Conditional
+13. IF Conditional Bercabang
+14. IF Conditional dan Operator Logika
+15. Case Conditional
+16. Looping times
+17. Looping dengan index
+18. Looping Upto dan Downto
+19. Variabel Incremental
+20. Looping While
+21. Looping Until
+22. Method atau Function
+23. Method dan Looping
+24. Return Method
+25. Function dan Method
+26. Function dan 2 Method
+27. Return Function 2 Method
+28. IF Conditional dan Function
+29. Method default parameter
+30. Array
+31. Array Call
+32. Array Length
+33. Menambahkan dan hapus Index Array belakang
+34. Menambahkan dan hapus Index Array depan
+35. 

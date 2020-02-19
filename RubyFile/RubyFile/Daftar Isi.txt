@@ -1,0 +1,54 @@
+========================================
+        DAFTAR ISI FOLDER RUBY
+========================================
+1. Print data (puts/print)
+2. Variabel dan Interpolation
+3. Tipe Data
+4. Data Input
+5. Method untuk String
+6. Operasi Matematika
+7. Modulus
+8. Operator Perbandingan
+9. Operator Logika
+10. IF Conditional 1 line
+11. Unless Conditionalt
+12. IF Conditional
+13. IF Conditional Bercabang
+14. IF Conditional dan Operator Logika
+15. Case Conditional
+16. Looping times
+17. Looping dengan index
+18. Looping Upto dan Downto
+19. Variabel Incremental
+20. Looping While
+21. Looping Until
+22. Function
+23. Function dan Looping
+24. Return Function
+25. Function dan Method
+26. Function dan 2 Method
+27. Return Function 2 Method
+28. IF Conditional dan Function
+29. Method default parameter
+30. Pengenalan Array
+31. Pemanggilan Array berdasarkan index
+32. Melihat jumlah Array dengan Length
+33. Menambahkan dan hapus Index Array belakang
+34. Menambahkan dan hapus Index Array depan
+35. Menghapus nilai dari Sebuah Array berdasarkan index dan nilai
+36. Menghapus nilai dari Sebuah Array berdasarkan kondisi
+37. Menyatukan Array dengan Join
+38. Mengacak nilai dari Sebuah Array
+39. Looping Array
+40. Membuat Array Baru dari Sebuah Array
+41. Select pada Array
+42. Hash
+43. Pemanggilan Hash menggunakan fetch
+44. Membuat Hash Baru
+45. Mengubah value Hash
+46. Menghapus Index Hash
+47. Looping Key dan Value didalam Hash
+48. Looping Key menjadi array dan Mengambil value menjadi array
+49. Method Menggunakan Hash
+50. Splat method
+51. Memasukan Splat

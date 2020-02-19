@@ -1,0 +1,111 @@
+=======================================================================================================================================================
+			Perintah - perintah terminal/cmd di Ubuntu 18
+=======================================================================================================================================================
+- Membuka Terminal : Ctrl+alt+T
+- Masuk direktori : cd nama_folder -> cd "nama_folder"
+- Membersihkan list terminal : clear
+- Membuat file baru : touch -> touch sample_file.txt : membuat file baru dengan nama sample_file tipe teks
+- Melihat isi direktori : ls
+- Membuat folder baru : mkdir -> mkdir sample_folder : membuat folder baru dengan nama sample_folder
+- Memindahkan atau mengubah nama file : mv -> mv file_lama.txt file_baru.txt : mengubah nama file mv file.txt ~/Document/file.txt : memindahkan file
+- Menghapus file : rm -> rm sample_file.txt : menghapus file sample.text
+- Mencopy file : cp -> cp sample_file.txt sample_file(1).text
+- Mengulang terminal : reset -> fungsi hampir sama dengan perintah clear
+- Melihat isi file (biasanya file teks/txt) : cat sample_file.txt
+- Menghapus folder (dalam kondisi tidak ada file didalamnya) : rmdir sample_folder
+- Menghapus folder beserta isinya : rm -rv sample_folder
+- Membuka file di terminal (dalam tampilan terminal): nano sample_file.txt
+- Membuat hak akses dari suatu file : chmod -> chmod 0040 sample_file.txt : bisa melihat tidak bisa mengubah => http://permissions-calculator.org/
+- Menghentikan perintah cmd : ctrl+c
+- Melihat direktori yang sedang diakses : pwd
+
+=======================================================================================================================================================
+					Install GIT
+=======================================================================================================================================================
+1. sudo apt update
+2. sudo apt install git
+3. git --version -> cek versi git
+- Konfigurasi data diri di GIT ada 2 Cara -
+1. Biasa  -> git config --global user.name "Your Name"
+   -> git config --global user.email "youremail@domain.com"
+2. Nano   -> nano ~/.gitconfig
+	   |-> Output
+		[user]
+	  	  name = Your Name --------------------------> Isi
+	  	  email = youremail@domain.com --------------> Isi dan save
+
+=======================================================================================================================================================
+			       Install Node Js dan Yarn UBUNTU
+=======================================================================================================================================================
+- sudo apt update
+- sudo apt install nodejs
+- nodejs --version
+- curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+- echo"deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+- sudo apt update
+- sudo apt install yarn
+// Cara lain
+- sudo apt update
+- sudo apt install --no-install-recommends yarn
+- yarn --version
+
+=======================================================================================================================================================
+				Install PostgreSQL UBUNTU
+=======================================================================================================================================================
+- wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+- sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
+- sudo apt update
+- sudo apt-get install postgresql-10
+
+=======================================================================================================================================================
+				Install Rails Ruby UBUNTU
+=======================================================================================================================================================
+- sudo apt install curl
+- curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+- curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+- echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+- sudo apt-get update
+- sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn
+- cd
+- git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+- echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+- echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+- exec $SHELL
+- git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+- echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+- exec $SHELL
+- rbenv install 2.7.0
+- rbenv global 2.7.0
+- ruby -v
+- gem install bundle
+- gem install rails -v 6.0.2.1
+- rbenv rehash
+- rails -v
+
+=======================================================================================================================================================
+					Tambahan
+=======================================================================================================================================================
+1. Cek Update
+-------------------------------------------
+| $ sudo apt-get update / sudo apt update |
+-------------------------------------------
+Fungsi : Untuk mendapatkan "daftar" komponen yang terbaru berdasarkan komponen yang terkonfigurasi pada sebuah terminal
+
+Masuk PostgreSQL
+1. su - postgres
+2. sudo -u postgres psql -> Login
+
+=======================================================================================================================================================
+					GIT TUTORIAL
+=======================================================================================================================================================
+git init -> awal (inisialisasi)
+git remote add origin https://github.com/pratamashooter/belajar-git.git
+git add nama_file -> menambahkan file, jika banyak bisa ketik '.(titik)'
+git commit -m 'kalimat' -> menyampaikan pesan
+git push -u origin branch / git push origin branch -> update dari directory ke servers
+git pull origin branch -> update dari server ke directory
+git status -> cek status
+git branch -> cek branch dan daftar branch
+git checkout -> ganti branch
+git checkout -b branch -> buat baru
+
